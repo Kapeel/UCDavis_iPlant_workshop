@@ -3,9 +3,9 @@ This is a short tutorial on using icommands on iPlant Atmosphere instance
 
 #iPlant Data Store Tutorial
 
-There are multiple ways to access files and directories on the iPlant [Data Store][iPlant_Data] (aka [iRODS][iRods]).  Here we will cover three methods, each with their pros and cons.
+There are multiple ways to access files and directories on the iPlant [Data Store][iPlant_Data] (aka [iRODS][iRods]) each with their pros and cons.
 
-1. **Browser-based Access** --- User-friendly, but low throughput and 2GB upload limit
+- **Browser-based Access** --- User-friendly, but low throughput and 2GB upload limit
 - **iCommands** --- High throughput with maximum user control, but must be comfortable with the Command-Line Interface
 - **iDrop** --- High-throughput desktop client with the ability to schedule periodic transfers, but iDrop is in beta release and may have bugs
 
