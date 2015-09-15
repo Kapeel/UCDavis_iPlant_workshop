@@ -1,7 +1,7 @@
 # iCommands
-This is a short tutorial on using icommands on iPlant Atmosphere instance 
+This is a short tutorial on using icommands 
 
-#iPlant Data Store Tutorial
+#iPlant Data Store 
 
 There are multiple ways to access files and directories on the iPlant [Data Store][iPlant_Data] (aka [iRODS][iRods]) each with their pros and cons.
 
