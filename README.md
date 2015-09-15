@@ -44,27 +44,24 @@ Enter your irods user name: `_YOUR_iplantusername`
 Enter your irods zone: `iplant`  
 Enter your current iRODS password: `_YOUR_iplantpassword`  
 
-*__Note #1__: As of August 2012, the current version of iCommands is v3.1; however, the installation files provided by iPlant are v2.5. Version 2.5 seems to work fine and comes available pre-compiled on iPlant. If you want the current version, you can get it directly from [iRods][iCommands_current_download] (but you'll have to compile it yourself).*  
-*__Note #2__: If you are on a shared computer, type `iexit` to terminate your iCommands session when finished.*
-*__Note #2__: You should only have to initiate an iRODS connection once (unless you are on a shared machine and use `iexit` to terminate your session.*
 
 #####Available iCommands
 
 iCommands for transferring files are like their analogous commands, but more robust due to threading:
 
-- [`iput`][iput] ≈ ftp `put` - upload
-- [`iget`][iget] ≈ ftp `get` - download
-- [`irsync`][irsync] ≈ unix `rsync` - synchronize and keep up-to-date
+-  `iput`≈ ftp `put` - upload
+-  `iget`≈ ftp `get` - download
+-  `irsync`≈ unix `rsync` - synchronize and keep up-to-date
 
 Other [Unix-like iCommands][iCommands_unix]
 
-- [`ils`][ils] - list attributes of a file or the contents of a directory
-- [`icp`][icp] - copy
-- [`imv`][imv] - move or rename
-- [`irm`][irm] - remove/delete
-- [`imkdir`][imkdir] - make directories
-- [`ipwd`][ipwd] - print working directory
-- [`ichmod`][ichmod] - modify permissions
+- `ils` - list attributes of a file or the contents of a directory
+- `icp` - copy
+- `imv` - move or rename
+- `irm` - remove/delete
+- `imkdir` - make directories
+- `ipwd` - print working directory
+- `ichmod` - modify permissions
 
 For more detailed usage information, click on the iCommands above, visit the [iCommands website][iCommands], or type the iCommand followed by `-h` in a Terminal window.  For example, `iput -h` outputs the following:
 
