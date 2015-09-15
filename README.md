@@ -8,7 +8,7 @@ There are multiple ways to access files and directories on the iPlant [Data Stor
 - **Browser-based Access** --- User-friendly, but low throughput and 2GB upload limit
 - **iCommands** --- High throughput with maximum user control, but must be comfortable with the Command-Line Interface
 - **iDrop** --- High-throughput desktop client with the ability to schedule periodic transfers
-- **API's** --- APIs for programmers (not covered on this page)
+- **API's** --- APIs for programmers
 
 For the list of access methods for [uploading & downloading][UP_and_DOWN]
 
