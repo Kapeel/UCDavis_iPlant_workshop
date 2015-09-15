@@ -8,8 +8,9 @@ There are multiple ways to access files and directories on the iPlant [Data Stor
 - **Browser-based Access** --- User-friendly, but low throughput and 2GB upload limit
 - **iCommands** --- High throughput with maximum user control, but must be comfortable with the Command-Line Interface
 - **iDrop** --- High-throughput desktop client with the ability to schedule periodic transfers
+- **API's** --- APIs for programmers (not covered on this page)
 
-
+For the list of access methods for [uploading & downloading][UP_and_DOWN]
 Regardless of which way you access your data, you need to know where it is located:  
 The path to a user's home directory is `/iplant/home/username/` (replace "username", of course).  
 The path to shared directories accessible by a user is `/iplant/home/shared/`.
@@ -22,7 +23,7 @@ The path to shared directories accessible by a user is `/iplant/home/shared/`.
 
 ##1. Browser-based Access
 
-The iPlant Data Store can be accessed via your browser at <https://data.iplantcollaborative.org> or <https://data.iplantc.org> (you may get a warning that the latter link is attempting to redirect you to the former, but that's okay).  The browser-based method of access is arguably the most intuitive way to access your iPlant data and requires the least amount of setup.  However, there are two major limitations that accompany this convenience: (1) you cannot upload files >2GB and (2) it is difficult or impossible to manipulate or transfer multiple files at the same time via the browser.
+The iPlant Data Store can be accessed via your browser at <https://data.iplantcollaborative.org>. The browser-based method of access is arguably the most intuitive way to access your iPlant data and requires the least amount of setup.  However, there are two major limitations that accompany this convenience: (1) you cannot upload files >2GB and (2) it is difficult or impossible to manipulate or transfer multiple files at the same time via the browser.
 
 #####Navigation:
 
@@ -171,6 +172,7 @@ a &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; b
 [iPlant_DataStore]: https://data.iplantcollaborative.org/ "iPlant Data Store"
 [iPlant_Data]: http://www.iplantcollaborative.org/discover/data-store "iPlant Data"
 [iPlant_DataStore_QuickStart]: https://pods.iplantcollaborative.org/wiki/display/DS/Data+Store+Quick+Start "iPlant Data Store Quick Start"
+[UP_and_DOWN]: https://pods.iplantcollaborative.org/wiki/display/DS/Data+Store+Quick+Start "uploading and downloading"
 [iCommands]: https://www.irods.org/index.php/icommands "iCommands"
 [iCommands_autocomplete]: https://pods.iplantcollaborative.org/wiki/display/start/Using+icommands#Usingicommands-SettingupBashautocompleteforicommands "iCommands autocomplete"
 [iCommands_current_download]: https://www.irods.org/index.php/Downloads "Download the current version of iCommands"
