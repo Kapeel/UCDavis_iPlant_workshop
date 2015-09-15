@@ -92,15 +92,14 @@ Breakdown of sample:
 - `iput` uploads a file/directory
 - `-P` outputs the progress of the upload
 - `-V` turns on 'Very verbose' mode (use `-v` for a less gregarious `iput`)
-- `-b` performs bulk uploading and is useful when transferring many small files *(__WARNING...__ see note below)*
+- `-b` performs bulk uploading and is useful when transferring many small files 
 - `-r` transfer all files and subdirectories within the directory being uploaded
 - `-T` renews socket connection after 10 minutes (helps keep things stable and robust)
-- `-X` turns on the checkpointing function; must specify a temporary checkpoint file *(see note below)*
+- `-X` turns on the checkpointing function; must specify a temporary checkpoint file 
 
-*__Note #1__: __WARNING...__ regarding the use of `-b`: a while ago we had some issues when we used bulk uploading of small files. It seems like there was a problem with excessive disk activity; however, I haven't spent much time looking into this and it may or may not be an issue. Just keep it in mind if you use `-b`.*  
-*__Note #2__: When checkpointing with `-X`, be careful about running multiple uploads at the same time. If you do have simultaneous uploads in progress, be sure to use unique names for your `checkpoint_file`. For example, I use a script that names the `checkpoint_file` based on the current date, time, and file/directory being transferred. This ensures that I always have unique names and I also have a record of uploads.*  
-*__Note #4__: If your upload fails and you used checkpointing, you can restart from the last successful file uploaded simply by rerunning the `iput` command with the original parameters.*  
-*__Note #4__: In addition to checkpointing with `-X` (which keeps track of which files you've already uploaded), the current version of iCommands allows you to do another type of checkpointing that keeps track of how much of the current file has been uploaded. This can be useful when an upload of very large files fails. To turn this type of checkpointing on, use `--lfrestart checkpoint_lf_file` in addition to `-X checkpoint_file`.*
+*__Note #1__: When checkpointing with `-X`, be careful about running multiple uploads at the same time. If you do have simultaneous uploads in progress, be sure to use unique names for your `checkpoint_file`. For example, I use a script that names the `checkpoint_file` based on the current date, time, and file/directory being transferred. This ensures that I always have unique names and I also have a record of uploads.*  
+*__Note #2__: If your upload fails and you used checkpointing, you can restart from the last successful file uploaded simply by rerunning the `iput` command with the original parameters.*  
+*__Note #3__: In addition to checkpointing with `-X` (which keeps track of which files you've already uploaded), the current version of iCommands allows you to do another type of checkpointing that keeps track of how much of the current file has been uploaded. This can be useful when an upload of very large files fails. To turn this type of checkpointing on, use `--lfrestart checkpoint_lf_file` in addition to `-X checkpoint_file`.*
 
 #####Downloading files with `iget`
 
