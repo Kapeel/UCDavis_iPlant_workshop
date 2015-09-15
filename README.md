@@ -11,6 +11,8 @@ There are multiple ways to access files and directories on the iPlant [Data Stor
 - **API's** --- APIs for programmers (not covered on this page)
 
 For the list of access methods for [uploading & downloading][UP_and_DOWN]
+
+
 Regardless of which way you access your data, you need to know where it is located:  
 The path to a user's home directory is `/iplant/home/username/` (replace "username", of course).  
 The path to shared directories accessible by a user is `/iplant/home/shared/`.
@@ -25,42 +27,6 @@ The path to shared directories accessible by a user is `/iplant/home/shared/`.
 
 The iPlant Data Store can be accessed via your browser at <https://data.iplantcollaborative.org>. The browser-based method of access is arguably the most intuitive way to access your iPlant data and requires the least amount of setup.  However, there are two major limitations that accompany this convenience: (1) you cannot upload files >2GB and (2) it is difficult or impossible to manipulate or transfer multiple files at the same time via the browser.
 
-#####Navigation:
-
-- Quickly change to your home directory by clicking the Home icon in the upper-right of the Data Store interface.
-- Click on directory names or `... Parent Directory` to navigate to other directories *(see note below)*
-
-#####Uploading and downloading files
-
-- Click on a file name to download the file *(see note below)*
-- Click `Upload File` to upload file
-
-#####Checking and modifying access permissions
-
-- Click in the white space to the right of a file/directory name and then click `Access Control` *(see note below)*
-- From here, you can set different combinations of read/write access
-- When setting permissions for directories, the recursive option will change the permission settings for all files and subdirectories
-- Setting a directory to 'sticky' means that any new files/directories created within will inherit the permission settings of the parent directory
-
-#####QuickSharing files with anyone (including non-iPlant users):
-
-Although you can alter permissions to allow other iPlant users to have access to your files, this doesn't help if you want to share files via the iPlant Data Store with colleagues that don't have an iPlant account.  To share with the general public, do the following:
-
-- Click in the white space to the right of a file name and then click `Share/Unshare` *(see note below)*
-- After confirming your choice, you will see a URL to the right of the file name in the 'QuickShare' Column.
-
-You can share the URL with people and when they click it, the shared file will download.  Sharing of a file can be stopped by selecting the file and clicking `Share/Unshare` again.  Entire directories cannot be shared in this manner, only individual files.
-
-#####Other types of file manipulation are also possible and include:
-
-- creating directories
-- renaming, coping, moving, and deleting files/directories
-
-#####Deleted Files
-
-Deleted files remain (at least temporarily) in your trash folder until you empty the trash.  Click on the Trash icon to view these files.  Here, you can `Restore` deleted files or `Empty Trash`.
-
-*__Note #1__: There is one file/directory per row. Clicking on the name or the icon for a file/directory has a different function than clicking on the white space in that row. Clicking on the white space to the right of the names doesn't change directories or download files, rather it selects the corresponding file or directory for further manipulation. See above for when to click on the name and when to click on the white space.*
 
 ##2. [iCommands][iCommands]
 
