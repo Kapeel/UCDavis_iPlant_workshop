@@ -7,11 +7,8 @@ There are multiple ways to access files and directories on the iPlant [Data Stor
 
 - **Browser-based Access** --- User-friendly, but low throughput and 2GB upload limit
 - **iCommands** --- High throughput with maximum user control, but must be comfortable with the Command-Line Interface
-- **iDrop** --- High-throughput desktop client with the ability to schedule periodic transfers, but iDrop is in beta release and may have bugs
+- **iDrop** --- High-throughput desktop client with the ability to schedule periodic transfers
 
-Additionally...
-
-- **Mounting iRods via Atmosphere Instance** --- iPlant's [Atmosphere][atmosphere] cloud service allows you to run analyses on virtual machines (VMs). You can access files on iRods (using any of the three approaches above) when using Atmosphere. This section explains how to mount iRods as a 'normal' volume accessible by your VM.
 
 Regardless of which way you access your data, you need to know where it is located:  
 The path to a user's home directory is `/iplant/home/username/` (replace "username", of course).  
@@ -19,9 +16,8 @@ The path to shared directories accessible by a user is `/iplant/home/shared/`.
 
 ***If you don't have an iPlant account:*** You can register for your account at <https://user.iplantcollaborative.org/register/>.  After registering, go to <https://user.iplantcollaborative.org/dashboard/> to request access to the Atmosphere service by clicking on 'Request Access'.
 
-A couple useful links:
+ useful link:
 
-- [iPlant Data Store Cheatsheet][iPlant_DataStore_CheatSheet]
 - [iPlant Data Store Quick Start][iPlant_DataStore_QuickStart]
 
 ##1. Browser-based Access
@@ -163,75 +159,7 @@ Sample commands:
 - `irsync -rV` `i:remote_file_or_directory` `local_target_file_or_directory` 
 - `irsync -rV` `i:remote_file_or_directory` `i:remote_target_file_or_directory` 
 
-##3. iDrop
 
-iDrop is a program that allows the transfer of large files in a high throughput manner. It also has the capability for scheduling periodic transfers:
-
-- [Normal iDrop (download & tutorial)][iDrop_Tutorial] - Allows access to user's home directory
-- ["Expert" iDrop (download only)][iDrop_Expert_Download] - Allows access to shared resources, too
-
-*__Note #1__: iDrop is in beta release and may have bugs.*
-
-##Bonus Material: Mounting iRods via Atmosphere Instance
-
-- Full instructions are located [here][iRODS_Mount]. Below is a summary.
-
-#####Summary:
-
-1. After connecting to your Atmosphere instance via `VNC` (and opening `Terminal`) or via `SSH`, type: `iinit` to start initiate iCommands.
-
-- Enter the following information if asked:
->Enter the host name (DNS) of the server to connect to: `data.iplantcollaborative.org`  
-Enter the port number: `1247`  
-Enter your irods user name: `_YOUR_iplantusername`  
-Enter your irods zone: `iplant`  
-Enter your current iRODS password: `_YOUR_iplantpassword`  
-
-- Specify where to mount your iRODS volume by typing, for example: `mkdir $HOME/irods_home`
-
-- Mount your iRODS volume by typing: `irodsFs $HOME/irods_home -o max_readahead=0`
-	- Type `ipwd` to show the the directory of your iRODS volume that will be mounted.
-	- To change select an alternative mount point, use `icd` to change the directory *before* using the `irodsFs` command, for example: `icd /iplant/home/shared/ucd.tomato`.
-
-When I start a new Atmosphere instance and need to mount the iRODS volume at different points, I use the following:
-
-    iinit    #if I haven't already initiated iCommands
-
-    mkdir $HOME/irods_home
-    icd /iplant/home/mfc    #use your own iPlant username instead of "mfc"
-    irodsFs $HOME/irods_home -o max_readahead=0
-
-    mkdir $HOME/tomato
-    icd /iplant/home/shared/ucd.tomato
-    irodsFs $HOME/tomato -o max_readahead=0
-
-    mkdir $HOME/brassica
-    icd /iplant/home/shared/ucd.brassica
-    irodsFs $HOME/brassica -o max_readahead=0
-
-    mkdir $HOME/plantbio
-    icd /iplant/home/shared/ucd.plantbio
-    irodsFs $HOME/plantbio -o max_readahead=0
-
-*__Note #1__: You may not have access to all of these directories.*  
-*__Note #2__: Mounting iRODS volumes like this requires installation of FUSE. This is installed by default on the Atmosphere instances and can be installed elsewhere, too.*
-*__Note #3__: If you mount the wrong volume, etc., you can unmount it with `umount $HOME/irods_home`, for example.*
-
-Slightly off topic, if you are using an EBS volume, you can mount it with the following commands (see *Note#1* below if this is the first time using your EBS volume):
-
-    sudo mkdir /mydata    #the mount point doesn't have to be called "mydata"
-    sudo chown mfc /mydata    #use your own iPlant username instead of "mfc" (when you make the /mydata directory using sudo, it will belong to 'root'; chown is used to change ownership)
-    sudo mount /dev/vdc /mydata
-
-*__Note #1__: Your volume must be formatted before using the first time. You can do this with `sudo /sbin/mkfs /dev/vdc` as described in the [iPlant wiki][iplant_ebs_mount].*  
-*__Note #2__: `/dev/vdc` should be the default device if you are only using one EBS volume. If you are using more than one (or `/dev/vdc` doesn't work), check the device in the [Atmosphere][atmosphere] dashboard under "Volume storage management".*
-
-___
-
-___
-
->>last updated by mike covington @ 2012-07-30  
-*if you notice any typos, broken links, etc. or something isn't clear, please contact me!*
 
 <!--
 forced spacing: 
@@ -242,8 +170,7 @@ a &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; b
 
 [iPlant_DataStore]: https://data.iplantcollaborative.org/ "iPlant Data Store"
 [iPlant_Data]: http://www.iplantcollaborative.org/discover/data-store "iPlant Data"
-[iPlant_DataStore_QuickStart]: https://pods.iplantcollaborative.org/wiki/display/start/Data+Store+Quick+Start "iPlant Data Store Quick Start"
-[iPlant_DataStore_CheatSheet]: https://pods.iplantcollaborative.org/wiki/download/attachments/7525221/DataStoreCheatSheet.pdf?version=1&modificationDate=1324329532000 "DataStoreCheatSheet.pdf"
+[iPlant_DataStore_QuickStart]: https://pods.iplantcollaborative.org/wiki/display/DS/Data+Store+Quick+Start "iPlant Data Store Quick Start"
 [iCommands]: https://www.irods.org/index.php/icommands "iCommands"
 [iCommands_autocomplete]: https://pods.iplantcollaborative.org/wiki/display/start/Using+icommands#Usingicommands-SettingupBashautocompleteforicommands "iCommands autocomplete"
 [iCommands_current_download]: https://www.irods.org/index.php/Downloads "Download the current version of iCommands"
