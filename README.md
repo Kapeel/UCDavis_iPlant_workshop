@@ -142,5 +142,5 @@ a &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; b
 [iCommands_iPlant]: https://pods.iplantcollaborative.org/wiki/display/start/Using+icommands "Using iCommmands"
 [iCommands_unix]: https://www.irods.org/index.php/icommands#Unix-like_commands "Unix-like iCommands"
 [iRods]: https://www.irods.org "iRods.org"
-[iRODS_initiate]: https://pods.iplantcollaborative.org/wiki/display/start/Using+icommands#Usingicommands-InitiateconnectiontoiRODS%3Aiinit "initiating iRODS connection"
+[iRODS_initiate]: https://pods.iplantcollaborative.org/wiki/display/DS/Using+iCommands "initiating iRODS connection"
 [atmosphere]: https://atmo-beta.iplantcollaborative.org/ "Atmosphere"
