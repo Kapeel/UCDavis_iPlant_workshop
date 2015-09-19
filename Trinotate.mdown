@@ -31,7 +31,12 @@ Trinotate is a comprehensive annotation suite designed for automatic functional 
 
   `myTrinotate.sqlite`-Trinotate sqlite database file
 
+## Running TrinotateWeb on iPlant Atmosphere
 
+1. ** Connect to insatnce via VNC viewer**-- Use VNC Viewer to connect to instance
+2. ** Open Terminal**-- 
+  
+  `cd 
 
 [Trinotate reference][Trinotate_ref]
 <!-- links -->
