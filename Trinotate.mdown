@@ -10,9 +10,9 @@ Trinotate is a comprehensive annotation suite designed for automatic functional 
 1. **Launch instance** -- Log in to atomsphre-> Click on "Launch New Instance" -> Type in search ***"Trinotate_RNAseq_annotation_v2"*** and select -> Select image size & Click on Launch Instance 
 2. **Connect to instance** -- You can either ssh thorugh terminal of using UNIX or Mac machine or using putty on windows or connecting to the instance via VNC
 
->ssh `username@<IP_Address_of_instance>`
+  >ssh `username@<IP_Address_of_instance>`
 
-eg: ssh `USER_Jim@126.12.13.175`
+
 
 
 
