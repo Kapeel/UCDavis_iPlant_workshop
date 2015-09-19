@@ -1,0 +1,4 @@
+#MAKER-P Genome Annotation using Jbrowse in Atmosphere
+
+MAKER-P is a flexible and scalable genome annotation pipeline that automates the many steps necessary for the detection of protein coding genes (Campbell et al. 2013).  MAKER-P identifies repeats, aligns ESTs and proteins to a genome, produces ab initio gene predictions, and automatically synthesizes these data into gene annotations having evidence-based quality indices.  MAKER-P was developed by the Yandell Lab.  Its predecessor, MAKER, is described in several publications (Cantarel et al. 2008; Holt & Yandell 2011).  Additional background is available at the MAKER Tutorial at GMOD and is highly recommended reading.  MAKER-P v2.28 is currently available as an Atmosphere image and is MPI-enabled for parallel processing.
+
