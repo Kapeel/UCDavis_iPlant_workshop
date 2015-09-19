@@ -2,37 +2,37 @@
 
 MAKER-P is a flexible and scalable genome annotation pipeline that automates the many steps necessary for the detection of protein coding genes (Campbell et al. 2013).  MAKER-P identifies repeats, aligns ESTs and proteins to a genome, produces ab initio gene predictions, and automatically synthesizes these data into gene annotations having evidence-based quality indices.  MAKER-P was developed by the Yandell Lab.  Its predecessor, MAKER, is described in several publications (Cantarel et al. 2008; Holt & Yandell 2011).  Additional background is available at the MAKER Tutorial at GMOD and is highly recommended reading.  MAKER-P v2.28 is currently available as an Atmosphere image and is MPI-enabled for parallel processing.
 
-**Example usage:
+**Example usage:**
 
-1.***Create a run directory in your home and move to that directory, e.g.:***
+1.**Create a run directory in your home and move to that directory, e.g.:**
 
 `$ mkdir maker_run`
 
 `$ cd maker_run`
 
-2.Copy over the control file and test_data:
+2.**Copy over the control file and test_data:**
 
  `$ cp ~/Desktop/MAKER-P_example_data/maker_opts.ctl .`
   
   `$ cp -r ~/Desktop/MAKER-P_example_data/test_data .`
 
-3.Generate additional needed control files with maker command:
+3.**Generate additional needed control files with maker command:**
 
 `$ maker -EXE`
 
 `$ maker -BOPTS`
 
-4.List contents to check previous steps:
+4.**List contents to check previous steps:**
 
 `$ ls
 maker_bopts.ctl  maker_exe.ctl  maker_opts.ctl  test_data`
 
-5.Initiate run using maker command. Several options are shown: 
+5.**Initiate run using maker command. Several options are shown:**
 
-option 1: Basic; tons of standard error will print to screen uncaptured:
+***option 1***: Basic; tons of standard error will print to screen uncaptured:
 
 `$ maker &`
 
-option 2: Redirect standard error to file and track time:
+***option 2***: Redirect standard error to file and track time:
 
 `$ (time maker) 2> log_file &`
