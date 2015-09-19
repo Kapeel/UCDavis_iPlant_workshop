@@ -48,7 +48,7 @@ Trinotate is a comprehensive annotation suite designed for automatic functional 
 
 4. **Enter the path for Trinotate sqlite database**
 
-
+  `/home/<iplat_username>/Trinotate-2.0.2/sample_data/myTrinotate.sqlite`
 
 [Trinotate reference][Trinotate_ref]
 <!-- links -->
