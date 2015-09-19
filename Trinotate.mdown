@@ -17,7 +17,14 @@ Trinotate is a comprehensive annotation suite designed for automatic functional 
   `wget http://de.iplantcollaborative.org/dl/d/1AA26E2C-1B08-4A4C-A575-8EF6CCD4B421/Trinotate-2.0.2.tar .`
   
 4. ** Run test runMe.sh script** -- 
-  Change directory to sample data `cd Trinotate-2.0.2/sample_data`
+
+  Change directory to sample data
+  
+    `cd Trinotate-2.0.2/sample_data`
+    
+    `sh runMe.sh`
+  
+  This will run the entire Trinotate pipeline sequentially. 
 
 
 
