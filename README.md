@@ -97,9 +97,6 @@ Breakdown of sample:
 - `-T` renews socket connection after 10 minutes (helps keep things stable and robust)
 - `-X` turns on the checkpointing function; must specify a temporary checkpoint file 
 
-*__Note #1__: When checkpointing with `-X`, be careful about running multiple uploads at the same time. If you do have simultaneous uploads in progress, be sure to use unique names for your `checkpoint_file`. For example, I use a script that names the `checkpoint_file` based on the current date, time, and file/directory being transferred. This ensures that I always have unique names and I also have a record of uploads.*  
-*__Note #2__: If your upload fails and you used checkpointing, you can restart from the last successful file uploaded simply by rerunning the `iput` command with the original parameters.*  
-*__Note #3__: In addition to checkpointing with `-X` (which keeps track of which files you've already uploaded), the current version of iCommands allows you to do another type of checkpointing that keeps track of how much of the current file has been uploaded. This can be useful when an upload of very large files fails. To turn this type of checkpointing on, use `--lfrestart checkpoint_lf_file` in addition to `-X checkpoint_file`.*
 
 #####Downloading files with `iget`
 
