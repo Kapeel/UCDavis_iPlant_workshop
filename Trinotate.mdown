@@ -36,7 +36,19 @@ Trinotate is a comprehensive annotation suite designed for automatic functional 
 1. ** Connect to insatnce via VNC viewer**-- Use VNC Viewer to connect to instance
 2. ** Open Terminal**-- 
   
-  `cd 
+  `cd ../TrinotateWeb`
+  `sh run_mongoose_webserver.sh`
+  
+  This will start the mongoose web server 
+3. **Open chrome web browser**-- go to your web browser and paste the URL:
+
+  `http://localhost:8080/cgi-bin/index.cgi`
+  
+  You should be prompted to enter in the path to your Trinotate sqlite database.
+
+4. **Enter the path for Trinotate sqlite database**
+
+
 
 [Trinotate reference][Trinotate_ref]
 <!-- links -->
