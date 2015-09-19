@@ -24,8 +24,9 @@ MAKER-P is a flexible and scalable genome annotation pipeline that automates the
 
 4.**List contents to check previous steps:**
 
-`$ ls
-maker_bopts.ctl  maker_exe.ctl  maker_opts.ctl  test_data`
+`$ ls`
+
+`maker_bopts.ctl  maker_exe.ctl  maker_opts.ctl  test_data`
 
 5.**Initiate run using maker command. Several options are shown:**
 
