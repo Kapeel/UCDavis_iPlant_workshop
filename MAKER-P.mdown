@@ -37,3 +37,65 @@ MAKER-P is a flexible and scalable genome annotation pipeline that automates the
 ***option 2***: Redirect standard error to file and track time:
 
 `$ (time maker) 2> log_file &`
+
+
+This Atmosphere image is enabled to display MAKER-P results in a Jbrowse browser.
+
+To access this instance of Jbrowse over the web you will need to start the 
+apache web server.  In the terminal type the following command:
+$ sudo /usr/sbin/apachectl start
+
+You will also need to know the host name of this instance:
+$ echo $HOSTNAME
+
+Example output might be:
+vm64-134.iplantcollaborative.org
+
+Copy and paste the host name into a web browser address bar and hit return.
+The browser should navigate to a welcome page, indicating that everything is
+working correctly so far.  (Most browsers will autmatically convert this to:
+http://vm64-134.iplantcollaborative.org/).
+
+To access the Jbrowse, simply add to the existing URL as follows:
+http://vm64-134.iplantcollaborative.org/jbrowse/JBrowse-1.11.5/
+
+Then click on the "rice_example" link.  The browser shows output of the MAKER-P tutorial. 
+
+To load your data into a Jbrowse:
+Step 1) Create a directory in the Jbwrowse data directory to hold your data:
+	$ cd /var/www/jbrowse/JBrowse-1.11.5/data
+	$ sudo mkdir genus_species #substitute your organism name
+
+Step 2) Run the load script supplied by Jbrowse. First change directories up one level.
+	Here we will load the output from the example data used in the Atmosphere tutorial 
+	is in the directory "maker_run" in your home directory.
+	$ cd /var/www/jbrowse/JBrowse-1.11.5/
+	$ sudo ./bin/maker2jbrowse -d ~/maker_run/test_genome.maker.output/test_genome_master_datastore_index.log -o ./data/genus_species/
+
+Step 4) Edit the organisms.conf to tell Jbrowse there is a new species, using a text editor such as nano.
+	$ cd /var/www/jbrowse/JBrowse-1.11.5/data
+	$ nano organisms.conf
+	
+	#Add lines similar to these:
+	[datasets.genus_species]
+	name = genus_species	
+	url = ?data=data/genus_species
+	
+Step 5) Restart apache
+	$ sudo /usr/sbin/apachectl restart
+
+Now when you go to http://vm64-134.iplantcollaborative.org/jbrowse/JBrowse-1.11.5/ the page should list your new
+browser along with others that are available (e.g. rice_example).
+
+If your new data are not be displayed it could be because of your web-browser cache.  Clear the cache
+and try again.
+
+Notes:
+1) The Jbrowse will only exist as long as your instance is up.  It will go away once
+your instance is terminated.  
+2) If you request your instance get imaged, then you should be able to access the Jbrowser
+in the future after launching a new instance of the saved image.  Note however the URL will be
+different and you will probably need to start apache as described above.
+3) An alternative to creating your own Jbrowse is to upload your data to CoGe, which provides
+a Jbrowse display service.  See: https://genomevolution.org/LoadAnnotation.pl
+4) See also additional instruction on setting up Jbrowse: http://jbrowse.org/code/JBrowse-1.11.5/docs/tutorial/
