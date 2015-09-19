@@ -16,7 +16,7 @@ Trinotate is a comprehensive annotation suite designed for automatic functional 
 
   `wget http://de.iplantcollaborative.org/dl/d/1AA26E2C-1B08-4A4C-A575-8EF6CCD4B421/Trinotate-2.0.2.tar .`
   
-4. ** Run test runMe.sh script** -- 
+4. **Run test runMe.sh script** -- 
 
   Change directory to sample data
   
@@ -25,6 +25,11 @@ Trinotate is a comprehensive annotation suite designed for automatic functional 
     `sh runMe.sh`
   
   This will run the entire Trinotate pipeline sequentially. 
+5. **Output** -- Look for the following files
+
+  `Trinotate_report.xls`- annotations file
+
+  `myTrinotate.sqlite`-Trinotate sqlite database file
 
 
 
