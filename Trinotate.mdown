@@ -2,6 +2,13 @@
 
 Trinotate is a comprehensive annotation suite designed for automatic functional annotation of transcriptomes, particularly de novo assembled transcriptomes, from model or non-model organisms. Trinotate makes use of a number of different well referenced methods for functional annotation including homology search to known sequence data (BLAST+/SwissProt/Uniref90), protein domain identification (HMMER/PFAM), protein signal peptide and transmembrane domain prediction (singalP/tmHMM), and comparison to currently curated annotation databases (EMBL Uniprot eggNOG/GO Pathways databases). All functional annotation data derived from the analysis of transcripts is integrated into a SQLite database which allows fast efficient searching for terms with specific qualities related to a desired scientific hypothesis or a means to create a whole annotation report for a transcriptome.
 
+
+***If you don't have an iPlant account:*** You can register for your account at <https://user.iplantcollaborative.org/register/>.  After registering, go to <https://user.iplantcollaborative.org/dashboard/> to request access to the Atmosphere service by clicking on 'Request Access'.
+
+## Running Trinotate on iPlant Atmosphere
+
+**Launch image**
+
 [Trinotate reference][Trinotate_ref]
 <!-- links -->
 [Trinotate_ref]: http://trinotate.github.io
