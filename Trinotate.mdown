@@ -12,7 +12,9 @@ Trinotate is a comprehensive annotation suite designed for automatic functional 
 
   >ssh `username@<IP_Address_of_instance>`
 
+3. **Download Trinoate with example data** -- 
 
+  `wget http://de.iplantcollaborative.org/dl/d/1AA26E2C-1B08-4A4C-A575-8EF6CCD4B421/Trinotate-2.0.2.tar .`
 
 
 
