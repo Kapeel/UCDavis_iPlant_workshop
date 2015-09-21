@@ -109,9 +109,12 @@ and try again.
 ***Notes:
 	1) The Jbrowse will only exist as long as your instance is up.  It will go away once
 	your instance is terminated.  
+	
 	2) If you request your instance get imaged, then you should be able to access the Jbrowser
 	in the future after launching a new instance of the saved image.  Note however the URL will be
 	different and you will probably need to start apache as described above.
+	
 	3) An alternative to creating your own Jbrowse is to upload your data to CoGe, which provides
 	a Jbrowse display service.  See: https://genomevolution.org/LoadAnnotation.pl
+	
 	4) See also additional instruction on setting up Jbrowse: http://jbrowse.org/code/JBrowse-1.11.5/docs/tutorial/
