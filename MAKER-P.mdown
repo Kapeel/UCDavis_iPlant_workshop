@@ -48,7 +48,7 @@ To access this instance of Jbrowse over the web you will need to start the
 apache web server.  In the terminal type the following command:
 
 
-1.`$ sudo /usr/sbin/apachectl start`
+*1.*`$ sudo /usr/sbin/apachectl start`
 
 2.You will also need to know the host name of this instance:
 
