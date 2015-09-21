@@ -48,7 +48,7 @@ To access this instance of Jbrowse over the web you will need to start the
 apache web server.  In the terminal type the following command:
 
 
-*1.*`$ sudo /usr/sbin/apachectl start`
+1.`$ sudo /usr/sbin/apachectl start`
 
 2.You will also need to know the host name of this instance:
 
@@ -70,24 +70,31 @@ Then click on the "rice_example" link.  The browser shows output of the MAKER-P 
 
 **To load your data into a Jbrowse:**
 
-Step 1) Create a directory in the Jbwrowse data directory to hold your data:
-	$ cd /var/www/jbrowse/JBrowse-1.11.5/data
-	$ sudo mkdir genus_species #substitute your organism name
+***Step 1) Create a directory in the Jbwrowse data directory to hold your data:***
 
-Step 2) Run the load script supplied by Jbrowse. First change directories up one level.
+	`$ cd /var/www/jbrowse/JBrowse-1.11.5/data`
+	
+	`$ sudo mkdir genus_species #substitute your organism name`
+
+***Step 2) Run the load script supplied by Jbrowse. First change directories up one level.***
+
 	Here we will load the output from the example data used in the Atmosphere tutorial 
 	is in the directory "maker_run" in your home directory.
-	$ cd /var/www/jbrowse/JBrowse-1.11.5/
-	$ sudo ./bin/maker2jbrowse -d ~/maker_run/test_genome.maker.output/test_genome_master_datastore_index.log -o ./data/genus_species/
-
-Step 4) Edit the organisms.conf to tell Jbrowse there is a new species, using a text editor such as nano.
-	$ cd /var/www/jbrowse/JBrowse-1.11.5/data
-	$ nano organisms.conf
 	
-	#Add lines similar to these:
-	[datasets.genus_species]
-	name = genus_species	
-	url = ?data=data/genus_species
+	`$ cd /var/www/jbrowse/JBrowse-1.11.5/`
+	
+	`$ sudo ./bin/maker2jbrowse -d ~/maker_run/test_genome.maker.output/test_genome_master_datastore_index.log -o ./data/genus_species/`
+
+***Step 4) Edit the organisms.conf to tell Jbrowse there is a new species, using a text editor such as nano.***
+
+	`$ cd /var/www/jbrowse/JBrowse-1.11.5/data`
+	
+	`$ nano organisms.conf`
+	
+	`#Add lines similar to these:`
+	`[datasets.genus_species]`
+	`name = genus_species`	
+	`url = ?data=data/genus_species`
 	
 Step 5) Restart apache
 	$ sudo /usr/sbin/apachectl restart
