@@ -6,37 +6,37 @@ MAKER-P is a flexible and scalable genome annotation pipeline that automates the
 
 1.***Create a run directory in your home and move to that directory, e.g.:***
 
-	`$ mkdir maker_run`
+	$ mkdir maker_run
 
-	`$ cd maker_run`
+	$ cd maker_run
 
 2.***Copy over the control file and test_data:***
 
-	`$ cp ~/Desktop/MAKER-P_example_data/maker_opts.ctl .`
+	$ cp ~/Desktop/MAKER-P_example_data/maker_opts.ctl .
   
-  	`$ cp -r ~/Desktop/MAKER-P_example_data/test_data .`
+  	$ cp -r ~/Desktop/MAKER-P_example_data/test_data .
 
 3.***Generate additional needed control files with maker command:***
 
-	`$ maker -EXE`
+	$ maker -EXE
 
-	`$ maker -BOPTS`
+	$ maker -BOPTS
 
 4.***List contents to check previous steps:***
 
-	`$ ls`
+	$ ls
 
-	`maker_bopts.ctl  maker_exe.ctl  maker_opts.ctl  test_data`
+	maker_bopts.ctl  maker_exe.ctl  maker_opts.ctl  test_data
 
 5.***Initiate run using maker command. Several options are shown:***
 
 	***option 1***: Basic; tons of standard error will print to screen uncaptured:
 
-	`$ maker &`
+	$ maker &
 
 	***option 2***: Redirect standard error to file and track time:
 
-	`$ (time maker) 2> log_file &`
+	$ (time maker) 2> log_file &
 
 
 
@@ -44,27 +44,31 @@ MAKER-P is a flexible and scalable genome annotation pipeline that automates the
 
 This Atmosphere image is enabled to display MAKER-P results in a Jbrowse browser.
 
-To access this instance of Jbrowse over the web you will need to start the 
+
+
+
+1.To access this instance of Jbrowse over the web you will need to start the 
 apache web server.  In the terminal type the following command:
 
-
-1.`$ sudo /usr/sbin/apachectl start`
+	$ sudo /usr/sbin/apachectl start
 
 2.You will also need to know the host name of this instance:
 
-`$ echo $HOSTNAME`
+	$ echo $HOSTNAME
 
 Example output might be:
-`vm64-134.iplantcollaborative.org`
+	vm64-134.iplantcollaborative.org
 
 3.Copy and paste the host name into a web browser address bar and hit return.
 The browser should navigate to a welcome page, indicating that everything is
-working correctly so far.  (Most browsers will autmatically convert this to:
-http://vm64-134.iplantcollaborative.org/).
+working correctly so far.  
+
+	(Most browsers will autmatically convert this to:
+	http://vm64-134.iplantcollaborative.org/).
 
 4.To access the Jbrowse, simply add to the existing URL as follows:
 
-`http://vm64-134.iplantcollaborative.org/jbrowse/JBrowse-1.11.5/`
+	http://vm64-134.iplantcollaborative.org/jbrowse/JBrowse-1.11.5/
 
 Then click on the "rice_example" link.  The browser shows output of the MAKER-P tutorial. 
 
