@@ -4,39 +4,39 @@ MAKER-P is a flexible and scalable genome annotation pipeline that automates the
 
 **Example usage- perfom MAKER annotation on test data:**
 
-1.*Create a run directory in your home and move to that directory, e.g.:*
+1.***Create a run directory in your home and move to that directory, e.g.:***
 
-`$ mkdir maker_run`
+	`$ mkdir maker_run`
 
-`$ cd maker_run`
+	`$ cd maker_run`
 
-2.*Copy over the control file and test_data:*
+2.***Copy over the control file and test_data:***
 
- `$ cp ~/Desktop/MAKER-P_example_data/maker_opts.ctl .`
+	`$ cp ~/Desktop/MAKER-P_example_data/maker_opts.ctl .`
   
-  `$ cp -r ~/Desktop/MAKER-P_example_data/test_data .`
+  	`$ cp -r ~/Desktop/MAKER-P_example_data/test_data .`
 
-3.*Generate additional needed control files with maker command:*
+3.***Generate additional needed control files with maker command:***
 
-`$ maker -EXE`
+	`$ maker -EXE`
 
-`$ maker -BOPTS`
+	`$ maker -BOPTS`
 
-4.*List contents to check previous steps:*
+4.***List contents to check previous steps:***
 
-`$ ls`
+	`$ ls`
 
-`maker_bopts.ctl  maker_exe.ctl  maker_opts.ctl  test_data`
+	`maker_bopts.ctl  maker_exe.ctl  maker_opts.ctl  test_data`
 
-5.*Initiate run using maker command. Several options are shown:*
+5.***Initiate run using maker command. Several options are shown:***
 
-***option 1***: Basic; tons of standard error will print to screen uncaptured:
+	***option 1***: Basic; tons of standard error will print to screen uncaptured:
 
-`$ maker &`
+	`$ maker &`
 
-***option 2***: Redirect standard error to file and track time:
+	***option 2***: Redirect standard error to file and track time:
 
-`$ (time maker) 2> log_file &`
+	`$ (time maker) 2> log_file &`
 
 
 
@@ -106,7 +106,8 @@ browser along with others that are available (e.g. rice_example).
 If your new data are not be displayed it could be because of your web-browser cache.  Clear the cache
 and try again.
 
-***Notes:
+***Notes:***
+
 	1) The Jbrowse will only exist as long as your instance is up.  It will go away once
 	your instance is terminated.  
 	
