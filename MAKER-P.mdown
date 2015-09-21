@@ -57,6 +57,7 @@ apache web server.  In the terminal type the following command:
 	$ echo $HOSTNAME
 
 Example output might be:
+
 	vm64-134.iplantcollaborative.org
 
 3.Copy and paste the host name into a web browser address bar and hit return.
