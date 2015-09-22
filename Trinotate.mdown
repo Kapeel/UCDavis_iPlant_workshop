@@ -16,6 +16,8 @@ Trinotate is a comprehensive annotation suite designed for automatic functional 
 
   ` wget --no-check-certificate https://de.iplantcollaborative.org/dl/d/ED99CD7F-BAE9-48D5-B74E-E012AB465401/Trinotate-2.0.2.tar .`
   
+  `tar -xvf Trinotate-2.0.2.tar`
+  
 4. **Run test runMe.sh script** -- 
 
   Change directory to sample data
