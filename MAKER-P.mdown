@@ -38,6 +38,12 @@ MAKER-P is a flexible and scalable genome annotation pipeline that automates the
 
 	$ time maker 2> log_file &
 
+6.***check the progress of the MAKER run***
+
+	$ tail -f log_file
+	
+	
+
 
 
 **Visulizing MAKER output in Jbrowser browser**
