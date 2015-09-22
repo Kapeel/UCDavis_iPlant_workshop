@@ -33,7 +33,7 @@ Trinotate is a comprehensive annotation suite designed for automatic functional 
 
 ## Running TrinotateWeb on iPlant Atmosphere
 
-1. ** Connect to insatnce via VNC viewer**-- Use VNC Viewer to connect to instance
+1. ** Connect to instance via VNC viewer**-- Use VNC Viewer to connect to instance
 2. ** Open Terminal**-- 
   
   `cd ../TrinotateWeb`
@@ -50,7 +50,7 @@ Trinotate is a comprehensive annotation suite designed for automatic functional 
 
 4. **Enter the path for Trinotate sqlite database**
 
-  `/home/<iplat_username>/Trinotate-2.0.2/sample_data/myTrinotate.sqlite`
+  `/home/<iplant_username>/Trinotate-2.0.2/sample_data/myTrinotate.sqlite`
 
 [Trinotate reference][Trinotate_ref]
 <!-- links -->
